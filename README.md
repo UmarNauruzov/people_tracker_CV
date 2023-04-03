@@ -69,8 +69,7 @@ python main.py data/sample_videos/HallWayTracking/videos/001.avi
 ```
 Видео которая показывает работы модели трэкера людей с отображением пройденного пути:
 
-<video src='[data/sample_videos/results/result_compressed.mp4](https://github.com/UmarNauruzov/people_tracker_CV/blob/master/data/results/result_compressed.mp4)' width=360/>
-![hippo](https://media3.giphy.com/media/aUovxH8Vf9qDu/giphy.gif)
+![hippo]([https://media3.giphy.com/media/aUovxH8Vf9qDu/giphy.gif](https://drive.google.com/file/d/1cHk7fmLr2MoBsKRiIlIUZWnaYa_hpwFv/view?usp=share_link))
 
 ### Run in `Google Colab`
 
