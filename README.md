@@ -67,9 +67,11 @@ pip install torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio===0.10.1+cu
 ```
 python main.py data/sample_videos/HallWayTracking/videos/001.avi
 ```
-Видео которая показывает работы модели трэкера людей с отображением пройденного пути:
+
+Видео которое показывает работы модели трэкера людей с отображением пройденного пути:
 
 ![hippo](https://github.com/UmarNauruzov/people_tracker_CV/blob/master/data/results/result_compressed1.gif)
+
 
 ### Run in `Google Colab`
 
