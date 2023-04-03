@@ -6,6 +6,7 @@ from algoritmes.detectors.yolox import YOLOxDetector
 from algoritmes.detectors.easyocr_detector import TextDetector
 
 from algoritmes.detectors.detector import Detector
+
 __all__ = ['Detector'
            'YOLOv5Detector',
            'YOLOv6Detector',

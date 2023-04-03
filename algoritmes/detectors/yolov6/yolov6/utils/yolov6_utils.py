@@ -7,7 +7,7 @@ import torch.nn as nn
 import torch
 import torchvision
 
-from asone.detectors.yolov6.yolov6.layers.common import Conv
+from algoritmes.detectors.yolov6.yolov6.layers.common import Conv
 
 def nms(boxes, scores, iou_threshold):
     # Sort by score

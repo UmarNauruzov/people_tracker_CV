@@ -83,13 +83,3 @@ class Detector:
                image: list,
                **kwargs: dict):
         return self.model.detect(image, **kwargs)
-
-
-if __name__ == '__main__':
-
-    # Initialize YOLOv6 object detector
-    model_type = 56
-    result = Detector(model_flag=model_type, use_cuda=True)
-    img = cv2.imread('asone/asone-linux/test.jpeg')
-    pred = result.get_detector(img)
-    print(pred)
