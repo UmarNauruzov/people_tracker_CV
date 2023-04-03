@@ -4,8 +4,8 @@
 1. Вступление
 2. Клонируйте репозиторий
 3. Установка
-    - [Linux](#4-installation)
-    - [Windows 10/11](#4-installation) 
+    - [Linux](#3-Установка)
+    - [Windows 10/11](#3-Установка) 
 4. Примеры использования
 
 ## 1. Вступление
@@ -62,11 +62,15 @@ pip install torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio===0.10.1+cu
 
 ## 4. Примеры использования
 
-Run `main.py` to test tracker on `data/sample_videos/HallWayTracking/videos/001.avi` video
+Запусти `main.py` чтобы протестировать трекер на `data/sample_videos/HallWayTracking/videos/001.avi` video
 
 ```
 python main.py data/sample_videos/HallWayTracking/videos/001.avi
 ```
+Видео которая показывает работы модели трэкера людей с отображением пройденного пути:
+
+<video src='data/sample_videos/results/result_compressed.mp4' width=180/></video>
+![hippo](https://media3.giphy.com/media/aUovxH8Vf9qDu/giphy.gif)
 
 ### Run in `Google Colab`
 

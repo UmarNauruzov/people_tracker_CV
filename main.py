@@ -46,7 +46,7 @@ if __name__ == '__main__':
     parser.add_argument('--filter_classes', default=None, help='Filter class name')
     parser.add_argument('-w', '--weights', default=None, help='Траектория движения тренированных весов')
     parser.add_argument('-ct', '--conf_thres', default=0.25, type=float, help='пороговый показатель достоверности')
-
+    parser.add_argument('-it', '--iou_thres', default=0.45, type=float, help='iou score threshold')
 
     args = parser.parse_args()
 
