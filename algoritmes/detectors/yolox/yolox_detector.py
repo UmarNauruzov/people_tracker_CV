@@ -9,7 +9,7 @@ import onnxruntime
 
 from algoritmes.utils import download_weights
 from algoritmes.detectors.yolox.yolox.utils import fuse_model, postprocess
-from algoritmes.detecasonetors.yolox.yolox.exp import get_exp
+from algoritmes.detectors.yolox.yolox.exp import get_exp
 from algoritmes.detectors.yolox.yolox_utils import preprocess, multiclass_nms, demo_postprocess
 
 
