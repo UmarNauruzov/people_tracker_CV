@@ -1,11 +1,13 @@
 lap
 loguru
+cython-bbox
 norfair
 numpy==1.23.3
 onnxruntime-gpu==1.12.1
-opencv-python
+opencv-python==4.5.4.60
 scipy
 pyyaml
+matplotlib
 easydict
 gdown
 pandas
