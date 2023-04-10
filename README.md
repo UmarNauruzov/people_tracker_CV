@@ -20,6 +20,7 @@
 
 ```git clone https://github.com/UmarNauruzov/people_tracker_CV```
 
+
 ## 3. Установка
 <details open>
 <summary>For Linux</summary>
@@ -27,8 +28,12 @@
 ```shell
 python3 -m venv .env
 source .env/bin/activate
-#загрузка необходимых библиотек
-pip install -r requirements.txt
+
+pip install numpy Cython
+pip install cython-bbox
+
+# for CPU
+pip install torch torchvision
 
 # for GPU
 pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu113
@@ -42,12 +47,13 @@ pip install torch torchvision --extra-index-url https://download.pytorch.org/whl
 ```shell
 python -m venv .env
 .env\Scripts\activate
-#загрузка необходимых библиотек
-pip install -r requirements.txt
-
-#если cython_bbox из-за какой-то причины не установился используете следующую запись
+pip install numpy Cython
 pip install -e git+https://github.com/samson-wang/cython_bbox.git#egg=cython-bbox
 
+# for CPU
+pip install torch torchvision
+
+# for GPU
 pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu113
 or
 pip install torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio===0.10.1+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
@@ -55,23 +61,17 @@ pip install torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio===0.10.1+cu
 </details>
 
 ## 4. Примеры использования
-Для запуска программы необходимо создать виртуальную среду и загрузить туда все необходимые библиотеки указанные в `requirements.txt` и дополнительно библиотеки указанные выше.
 
-При этом обращаю внимание, что может возникнуть проблема с загрузкой библиотеки lab, для решения проблемы, необходимо дополнительно установить пакет "Microsoft Visual C++ Build Tools", если он не
-установлен на Вашем компьютере.
-
-
-Запусти `main.py` чтобы протестировать трекер на `data/sample_videos/HallWayTracking/videos/001.avi` видео
+Запусти `main.py` чтобы протестировать трекер на `data/sample_videos/HallWayTracking/videos/001.avi` video
 
 ```
-python main.py data/sample_videos/HallWayTracking/videos/001.avi --draw_trails
+python main.py data/sample_videos/HallWayTracking/videos/001.avi
 ```
+Видео которая показывает работы модели трэкера людей с отображением пройденного пути:
 
-Видео, которое показывает работы модели трэкера людей с отображением пройденного пути:
-
-![hippo](https://github.com/UmarNauruzov/people_tracker_CV/blob/master/data/results/result_compressed1.gif)
-
+![hippo](https://media3.giphy.com/media/aUovxH8Vf9qDu/giphy.gif)
 
 ### Run in `Google Colab`
 
  <a href="https://colab.research.google.com/drive/1tafZRbNl_BV65qWA-kbBdOt80J6GIe0V?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+
